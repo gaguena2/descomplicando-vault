@@ -1,0 +1,8 @@
+wget https://releases.hashicorp.com/vault/1.17.2/vault_1.17.2_linux_amd64.zip
+ 
+vault dev:
+
+vault server -dev 
+
+vault server -dev -dev-listen-address=0.0.0.0:8200 -dev-root-token-id=giropops &
+
